@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0",
+  "site": {
+    "id": "ZJU-ZJG-PILOT-01", "name": "浙江大学紫金港校区 · 首期楼宇待确认", "region": "杭州市",
+    "campus": "紫金港校区", "status": "pending", "scope": "一个经授权楼宇及其周边通道，具体边界待管理方确认",
+    "note": "校区由团队确认；以下是采集槽位，不是已核实的校园风险点。校区名称不代表学校已授权或认可本项目。",
+    "authorization": {"status": "pending", "approver_role": "", "reference": "", "confirmed_at": ""},
+    "data_version": "zju-draft-01"
+  },
+  "weather": {
+    "id": "ZJU-EXERCISE-01", "title": "紫金港暴雨桌面演练 · 人工构造情景",
+    "publisher": "项目团队（模拟情景，非气象机构）", "source_url": "https://www.zju.edu.cn/",
+    "published_at": "2026-10-02T09:00:00+08:00", "replay_at": "2026-10-02T09:00:00+08:00",
+    "region": "杭州市", "hazards": ["rain"], "level": "未说明", "mode": "simulation",
+    "text_kind": "项目团队模拟材料；链接仅为学校背景入口，不是预警来源",
+    "text": "模拟情景：试验主持人要求核对本次楼宇范围内的入口、周边通道与信息传达任务。没有提供当前气象预警、积水、设施开闭或通行事实。所有点位需管理方核实；本资料不代表浙江大学发布的通知。",
+    "scope_note": "仅用于桌面流程测试。具体楼宇和现场状态未核实。"
+  },
+  "points": [
+    {"id":"ZJG-P01","name":"试点楼宇地下入口 A（采集槽位）","type":"underground","region":"杭州市","campus":"紫金港校区","features":["是否存在地下入口待现场确认"],"source":"待填：管理方台账或现场核验记录","status":"pending","verified_by":"","verified_at":""},
+    {"id":"ZJG-P02","name":"试点楼宇主入口 B（采集槽位）","type":"entrance","region":"杭州市","campus":"紫金港校区","features":["入口位置及管理边界待核实"],"source":"待填：管理方台账或现场核验记录","status":"pending","verified_by":"","verified_at":""},
+    {"id":"ZJG-P03","name":"楼宇周边通道 C（采集槽位）","type":"low_path","region":"杭州市","campus":"紫金港校区","features":["是否低洼未知，不作为易涝点认定"],"source":"待填：管理方台账或现场核验记录","status":"pending","verified_by":"","verified_at":""},
+    {"id":"ZJG-P04","name":"楼宇周边通道 D（采集槽位）","type":"low_path","region":"杭州市","campus":"紫金港校区","features":["与通道C是否同属本次范围待确认"],"source":"待填：管理方台账或现场核验记录","status":"pending","verified_by":"","verified_at":""},
+    {"id":"ZJG-P05","name":"室外设施 E（采集槽位）","type":"outdoor","region":"杭州市","campus":"紫金港校区","features":["设施种类、归属及巡查权限待确认"],"source":"待填：管理方台账或现场核验记录","status":"pending","verified_by":"","verified_at":""},
+    {"id":"ZJG-P06","name":"楼宇信息联络点 F（采集槽位）","type":"service","region":"杭州市","campus":"紫金港校区","features":["用于信息核对，不代表实体危险点"],"source":"待填：管理方确认的信息联络职责","status":"pending","verified_by":"","verified_at":""}
+  ],
+  "plans": [
+    {"id":"ZJG-R01","title":"地下入口信息核对","hazards":["rain"],"point_types":["underground"],"action":"由具备管理权限的人员通过既有渠道核对入口状态与对应预案，记录未知信息；学生试验人员不进入地下空间核查。","role":"楼宇管理人员（具体角色待确认）","source":"团队任务草稿ZJG-R01；尚非浙江大学正式预案","status":"draft","verified_by":"","verified_at":""},
+    {"id":"ZJG-R02","title":"楼宇入口状态核对","hazards":["rain"],"point_types":["entrance"],"action":"由楼宇管理人员核对入口最新状态、管理要求和更新时间；开闭决定由有权限的人员按现行预案作出。","role":"楼宇管理人员（具体角色待确认）","source":"团队任务草稿ZJG-R02；尚非浙江大学正式预案","status":"draft","verified_by":"","verified_at":""},
+    {"id":"ZJG-R03","title":"通道信息核对","hazards":["rain"],"point_types":["low_path"],"action":"通过管理方核对通道现状与现场指引；缺少观测时保留未知，不根据天气模型推断积水或可通行。","role":"片区管理人员（具体角色待确认）","source":"团队任务草稿ZJG-R03；尚非浙江大学正式预案","status":"draft","verified_by":"","verified_at":""},
+    {"id":"ZJG-R04","title":"公众信息核对与反馈整理","hazards":["rain","wind"],"point_types":["service"],"action":"核对通知来源、适用范围与时间，将已确认的管理信息整理为演练提示草稿，并收集公众理解反馈。","role":"信息联络人员（具体角色待确认）","source":"团队任务草稿ZJG-R04；尚非浙江大学正式预案","status":"draft","verified_by":"","verified_at":""},
+    {"id":"ZJG-R05","title":"室外设施责任与信息核对","hazards":["wind"],"point_types":["outdoor"],"action":"联系具备权限的设施管理人员核对防风任务及现有记录；不指派学生在恶劣天气中现场巡查。","role":"设施管理人员（具体角色待确认）","source":"团队任务草稿ZJG-R05；尚非浙江大学正式预案","status":"draft","verified_by":"","verified_at":""}
+  ]
+}

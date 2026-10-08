@@ -1,0 +1,86 @@
+{
+  "checked_on": "2026-10-01",
+  "sources": [
+    {
+      "id": "CMA-HOME",
+      "title": "国家气象信息中心—中国气象数据网",
+      "url": "http://data.cma.cn/site/index.html",
+      "verification": "直接HTTP访问成功，HTTP 200；HTTPS及搜索读取不稳定",
+      "purpose": "数据目录入口",
+      "raw_observations_downloaded": false
+    },
+    {
+      "id": "CMA-A0012",
+      "title": "中国地面基本气象观测数据",
+      "url": "http://data.cma.cn/cmaOld/data/detail/dataCode/A.0012.0001.html",
+      "verification": "直接HTTP访问公开详情成功",
+      "resolution": "逐三小时；降水为三小时累计量",
+      "latency": "公开详情说明滞后2天、每日滚动更新",
+      "access": "个人实名、单位实名注册用户访问；实际账户权限未验证",
+      "purpose": "历史气象背景或后续事件回放，不能当实时输入",
+      "raw_observations_downloaded": false
+    },
+    {
+      "id": "CMA-A0012-S011",
+      "title": "中国地面气象观测数据",
+      "url": "http://data.cma.cn/cmaOld/data/detail/dataCode/A.0012.0001.S011.html",
+      "verification": "直接HTTP访问公开详情成功",
+      "resolution": "国际交换站定时值；具体间隔和字段需核对下载说明",
+      "latency": "公开详情说明滞后2天、每日滚动更新",
+      "access": "个人实名、单位实名注册用户访问；实际账户权限未验证",
+      "purpose": "备选历史资料",
+      "raw_observations_downloaded": false
+    },
+    {
+      "id": "CMA-REGISTER",
+      "title": "会员注册流程",
+      "url": "http://data.cma.cn/cmaOld/article/getLeft/id/249/keyIndex/1.html",
+      "verification": "公开页面提供普通、个人实名、单位实名和教育科研实名入口",
+      "purpose": "用户自行确认账户类别与获取资格"
+    },
+    {
+      "id": "FZ-RAIN-20230905",
+      "title": "福州市暴雨红色预警信号",
+      "url": "https://www.fuzhou.gov.cn/zwgk/zdlyxxgk/aqsc/zrzh/202309/t20230906_4668875.htm",
+      "published_at": "2023-09-05T22:24:00+08:00",
+      "verification": "政府页面可核验发布时间、级别、预报范围和预计降雨",
+      "purpose": "唯一默认历史输入；原型保存人工摘要，不存整篇原文",
+      "caution": "网页路径日期与正文发布时间不同，以正文记录时间为准；此次获取时间不等同于2023年系统当时收到时间"
+    },
+    {
+      "id": "FZ-FIRE-20230907",
+      "title": "特大暴雨夜袭福州，他们一刻不停！",
+      "url": "https://www.fuzhou.gov.cn/xfzdzt/rcxf/gzdt/202309/t20230907_4669613.htm",
+      "published_at": "2023-09-07T16:24:00+08:00",
+      "verification": "福州市消防救援支队发布的事件记录",
+      "purpose": "问题背景与事后复盘；不进入9月5日回放输入",
+      "caution": "新闻没有覆盖所有点位，不作为未积水标签或完整训练集"
+    },
+    {
+      "id": "OPENMETEO-FUZHOU",
+      "title": "Open-Meteo Forecast API",
+      "url": "https://open-meteo.com/en/docs",
+      "api_base": "https://api.open-meteo.com/v1/forecast",
+      "checked_on": "2026-10-02",
+      "verification": "实际联网请求成功，保留来源、单位、有效时刻、网格坐标与获取时间",
+      "purpose": "城区最新模型背景与12小时窗展示",
+      "nature": "天气模型估计及预报，不是地面实测",
+      "attribution": "Weather data by Open-Meteo.com · CC BY 4.0",
+      "terms": "免费托管API仅用于非商业；商业用途需另核对服务条款",
+      "terms_url": "https://open-meteo.com/en/terms",
+      "caution": "模型起报时刻未知；当前15分钟量不可直接当作小时量"
+    },
+    {
+      "id": "NOAA-ZSFZ",
+      "title": "NOAA AWC METAR · ZSFZ福州长乐机场",
+      "url": "https://aviationweather.gov/data/api/",
+      "api_url": "https://aviationweather.gov/api/data/metar?ids=ZSFZ&format=json",
+      "checked_on": "2026-10-02",
+      "verification": "实际联网请求成功，保存原始METAR及观测/获取时间",
+      "purpose": "机场站温度、风速、天气现象与原始报文展示",
+      "nature": "机场观测报文，非城区/校园数据",
+      "caution": "本接入无累计降水字段；缺失不当作0；MPS/KT从原始报文换算"
+    }
+  ],
+  "live_sources_checked_on": "2026-10-02"
+}

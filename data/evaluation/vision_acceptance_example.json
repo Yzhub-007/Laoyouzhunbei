@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "dataset_kind": "synthetic",
+  "independent_events_confirmed": false,
+  "notice": "完全合成的教学样例，仅演示统计；不是摄像头实测，不代表任何模型的现场性能，不能用于正式验收。",
+  "records": [
+    {"point_id": "P001", "event_id": "TRAIN_EVENT_01", "frame_id": "TRAIN_F001", "split": "train", "label": "water", "prediction": "water", "confidence": 0.99},
+    {"point_id": "P001", "event_id": "VALID_EVENT_01", "frame_id": "VALID_F001", "split": "validation", "label": "clear", "prediction": "clear", "confidence": 0.98},
+    {"point_id": "P001", "event_id": "TEST_EVENT_01", "frame_id": "TEST_F001", "split": "test", "label": "water", "prediction": "water", "confidence": 0.96},
+    {"point_id": "P001", "event_id": "TEST_EVENT_01", "frame_id": "TEST_F002", "split": "test", "label": "water", "prediction": "unknown", "confidence": 0.55},
+    {"point_id": "P001", "event_id": "TEST_EVENT_01", "frame_id": "TEST_F003", "split": "test", "label": "clear", "prediction": "water", "confidence": 0.91},
+    {"point_id": "P001", "event_id": "TEST_EVENT_02", "frame_id": "TEST_F004", "split": "test", "label": "water", "prediction": "clear", "confidence": 0.88},
+    {"point_id": "P001", "event_id": "TEST_EVENT_02", "frame_id": "TEST_F005", "split": "test", "label": "clear", "prediction": "clear", "confidence": 0.95},
+    {"point_id": "P001", "event_id": "TEST_EVENT_02", "frame_id": "TEST_F006", "split": "test", "label": "unusable", "prediction": "unknown", "confidence": 0.4},
+    {"point_id": "P002", "event_id": "TEST_EVENT_01", "frame_id": "TEST_F007", "split": "test", "label": "unusable", "prediction": "clear", "confidence": 0.97},
+    {"point_id": "P002", "event_id": "TEST_EVENT_02", "frame_id": "TEST_F008", "split": "test", "label": "clear", "prediction": "unknown", "confidence": 0.5}
+  ]
+}

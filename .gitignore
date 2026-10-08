@@ -1,0 +1,16 @@
+.env
+runtime/
+.venv/
+.venv-vfloodnet/
+__pycache__/
+*.py[cod]
+qa-*/
+evidence/
+records.zip
+*.zip
+*.zip.sha256
+*.log
+.pytest_cache/
+.coverage
+.idea/
+.vscode/

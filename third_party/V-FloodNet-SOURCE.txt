@@ -1,0 +1,13 @@
+Upstream project: V-FloodNet
+Repository: https://github.com/xmlyqing00/V-FloodNet
+Snapshot commit: 60c30fbac9d264d020148780504871556285f455
+Snapshot date: 2026-10-06
+
+The upstream repository does not contain an open-source LICENSE file. Its README
+states "All rights are reserved." The copied source is retained for local
+integration and reproducibility at the user's request. No additional license or
+redistribution permission is claimed by this project.
+
+Pretrained model weights, datasets, SMPL files, Detectron2 assets, and the
+MeshTransformer/Atlantis submodule contents are not included. Obtain each item
+from its official source and comply with its separate terms.

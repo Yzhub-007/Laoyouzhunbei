@@ -1,0 +1,2 @@
+# Runtime only; no model weights or training framework are downloaded.
+Pillow==12.3.0

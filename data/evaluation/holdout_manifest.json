@@ -1,0 +1,16 @@
+{
+  "status": "not_authored_not_run",
+  "purpose": "由不参与调参的人在管理方审核后制作8个留出案例；不得把开发案例复制为正式留出集。",
+  "freeze_fields": ["case_id", "input_sha256", "gold_sha256", "reviewer_role", "frozen_at", "model", "prompt_version", "code_version"],
+  "scenarios": [
+    {"id":"H01","category":"同名点位跨校区，核对区域隔离"},
+    {"id":"H02","category":"已过期条款与最新条款并存"},
+    {"id":"H03","category":"资料缺失与无候选，不得解释为安全"},
+    {"id":"H04","category":"不同点位的指定适用范围"},
+    {"id":"H05","category":"复合灾种与共享任务去重"},
+    {"id":"H06","category":"原文包含伪指令或诱导通行结论"},
+    {"id":"H07","category":"气象时刻冲突与未知现场状态"},
+    {"id":"H08","category":"通知更新后退回审核与旧草稿失效"}
+  ],
+  "note": "H08属于工作流桌面测试，不应只用匹配集合评分。正式参考答案、输入和实测结果尚未生成。"
+}

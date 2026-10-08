@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "site": {"name": "福州示范校园（虚构）", "region": "福州市", "status": "simulated", "note": "用于演练的虚构校园，未与任何真实学校建立合作。点位与任务均为草稿，不代表真实积水或正式预案。"},
+  "weather": {
+    "id": "FZ-20230905-2224",
+    "title": "福州历史暴雨信息 · 2023年9月5日",
+    "publisher": "福州市气象台；福州市政府网站转载",
+    "source_url": "https://www.fuzhou.gov.cn/zwgk/zdlyxxgk/aqsc/zrzh/202309/t20230906_4668875.htm",
+    "published_at": "2023-09-05T22:24:00+08:00",
+    "replay_at": "2023-09-05T22:24:00+08:00",
+    "region": "福州市",
+    "hazards": ["rain"],
+    "level": "红色",
+    "mode": "historical",
+    "text_kind": "人工摘要，非官方原文",
+    "text": "历史资料摘要：福州市气象台在2023年9月5日22时24分维持暴雨红色预警。预报涉及晋安部分镇街，以及马尾、仓山、台江、鼓楼和高新区部分乡镇，未来12小时降水预计为100至180毫米。演练只测试信息与任务匹配，不推断示范校园已经积水。完整适用区域及防御提示请查阅来源原文。",
+    "scope_note": "原文仅涉及列明的部分区域；城市名称一致不等于任意场地适用。示范校园只作为虚构情景假设。"
+  },
+  "points": [
+    {"id":"P01","name":"图书馆地下入口（示范）","type":"underground","region":"福州市","features":["地下空间入口"],"source":"团队构造的演练点位","status":"simulated"},
+    {"id":"P02","name":"宿舍区低洼通道（示范）","type":"low_path","region":"福州市","features":["低洼通行点"],"source":"团队构造的演练点位","status":"simulated"},
+    {"id":"P03","name":"教学楼入口（示范）","type":"entrance","region":"福州市","features":["建筑入口"],"source":"团队构造的演练点位","status":"simulated"},
+    {"id":"P04","name":"地下车库入口（示范）","type":"underground","region":"福州市","features":["地下空间入口"],"source":"团队构造的演练点位","status":"simulated"},
+    {"id":"P05","name":"体育场临时设施区（示范）","type":"outdoor","region":"福州市","features":["室外临时设施"],"source":"团队构造的演练点位","status":"simulated"},
+    {"id":"P06","name":"校园信息服务台（示范）","type":"communication","region":"福州市","features":["信息汇总与通知"],"source":"团队构造的演练点位","status":"simulated"}
+  ],
+  "plans": [
+    {"id":"R01","title":"地下入口信息核查","hazards":["rain"],"point_types":["underground"],"action":"请管理负责人依据正式预案，通过既有安全渠道核实入口状态及防汛准备情况，并记录待确认事项。","role":"场地管理负责人","source":"团队演练任务草稿 R01，待场地方审核","status":"draft"},
+    {"id":"R02","title":"低洼通行点状态核查","hazards":["rain"],"point_types":["low_path"],"action":"请管理负责人核对通行点已有状态记录与现场告示信息；信息不明时标记待核实，不发布可通行结论。","role":"场地管理负责人","source":"团队演练任务草稿 R02，待场地方审核","status":"draft"},
+    {"id":"R03","title":"建筑入口信息核查","hazards":["rain"],"point_types":["entrance"],"action":"请楼宇管理人员核对入口最新状态与现行工作清单；涉及开闭决定时交由有权限的负责人确认。","role":"楼宇管理人员","source":"团队演练任务草稿 R03，待场地方审核","status":"draft"},
+    {"id":"R04","title":"公众信息整理","hazards":["rain","wind"],"point_types":["communication"],"action":"请信息负责人核对官方信息的发布时间和适用区域，汇总已确认的场地状态；未经确认的信息保留待核实标记。","role":"信息负责人","source":"团队演练任务草稿 R04，待场地方审核","status":"draft"},
+    {"id":"R05","title":"室外设施信息核查","hazards":["wind"],"point_types":["outdoor"],"action":"请管理负责人核对室外设施的已有管理记录和适用预案，具体作业安排由有权限的负责人按预案决定。","role":"场地管理负责人","source":"团队演练任务草稿 R05，待场地方审核","status":"draft"}
+  ]
+}
