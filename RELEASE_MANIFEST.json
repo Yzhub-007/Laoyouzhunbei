@@ -29,13 +29,13 @@
     },
     {
       "path": ".gitignore",
-      "size": 75,
-      "sha256": "b06160d4a905d298da7554d3822007b0faf45e23adb984c3e94095ae0b54b413"
+      "size": 155,
+      "sha256": "f59f94f20e0b0a1773f4e7e1acd02b6fb0d216c47d103d6821bede34a3f37c80"
     },
     {
       "path": "README.md",
-      "size": 8059,
-      "sha256": "4a902efd2d6a339e109c862fbeb9befc551834b09f0ae18795bc8a7c4ec55a0e"
+      "size": 44198,
+      "sha256": "c3d24c5e56cc0b9e03266e263ff3928fef08e413be200e3a6da4b0d3158dfed2"
     },
     {
       "path": "auth.py",
@@ -94,8 +94,8 @@
     },
     {
       "path": "data/source_catalog.json",
-      "size": 4489,
-      "sha256": "d14b37f8c1167362effa819a9d902080f5b32643971d784dd35494cd74a89cf7"
+      "size": 7228,
+      "sha256": "0bc03c5f6b536428465bb888cce7c28bcd3796363dad8b4687269cec162230df"
     },
     {
       "path": "data/zju_pilot.json",
@@ -139,8 +139,8 @@
     },
     {
       "path": "docs/08_实时数据接入说明.md",
-      "size": 7620,
-      "sha256": "9b21d2e6f10aaa54f0f104df50f978ab85646ac925bce68fd7cf56cc371103e6"
+      "size": 8094,
+      "sha256": "3d3e31838a9b7a9f7b2304066fef22cf814871478cab9f030085d7f4fbc3dc1e"
     },
     {
       "path": "docs/09_行动闭环与Agent优化.md",
@@ -223,6 +223,11 @@
       "sha256": "c64c1a850d7a235c6b6b45a49dfb8a7b666a2e094d72f16fe99c88ff541ca602"
     },
     {
+      "path": "docs/25_官方气象与水利数据源.md",
+      "size": 3473,
+      "sha256": "9f35e1ae9bf747afe0eecf7abfb03795ba45481a6a41af3ae42bd6e116d3de32"
+    },
+    {
       "path": "doctor.py",
       "size": 6018,
       "sha256": "d0a8fec5a75753802b0faaf8bbbc3a81f3e864bf05b7f1a1036b43e299cdf5fa"
@@ -274,8 +279,8 @@
     },
     {
       "path": "live_data.py",
-      "size": 16485,
-      "sha256": "bd61afebd50773fd2b4cae1c1d0a6ee15f436b76f26fd9cf95e09ccc903dd652"
+      "size": 17496,
+      "sha256": "7673c94d2044ed64a81b377cb6dc49d767dc699cbe404e65cb6035b30ea49814"
     },
     {
       "path": "monitoring.py",
@@ -399,8 +404,8 @@
     },
     {
       "path": "tests/test_live_data.py",
-      "size": 7601,
-      "sha256": "11073e38174cd8d19b0a6653780403ceebeaf90275e57b8e7620eadf1ce1761d"
+      "size": 8123,
+      "sha256": "f016c99e309d9cf7b43f005eac32faa7a0a7da3930b5dc96ad990c4f052d8980"
     },
     {
       "path": "tests/test_monitor_http.py",
@@ -769,8 +774,8 @@
     },
     {
       "path": "web/index.html",
-      "size": 45044,
-      "sha256": "4d076c11c69402c28608559c832015a0a64aa8a770bd4ff1e676669104d21ef4"
+      "size": 45385,
+      "sha256": "1ea91e31fbea2f9910d298ee13a25c03edadc9348936ad3f4491205e705f080b"
     },
     {
       "path": "web/monitor.js",

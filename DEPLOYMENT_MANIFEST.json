@@ -1,7 +1,7 @@
 {
-  "bundle": "涝有准备_完整项目_v0.9_V-FloodNet_含模型权重_完整README_v3",
-  "generated_on": "2026-10-08",
-  "source_release_sha256": "52e808e66d5d17aed7c821d5d0f3f0cbf4b39f0009d3155ffd607ce683174434",
+  "bundle": "涝有准备_项目_v0.9_V-FloodNet_官方数据源_2026-10-13",
+  "generated_on": "2026-10-13",
+  "source_release_sha256": "f505fdc47c27acff8a8b9c104565fa139d25b3118aca59ea66b8aa84f82f9181",
   "model": {
     "path": "third_party/V-FloodNet/records/link_efficientb4_model.pth",
     "size": 72294975,
@@ -17,7 +17,7 @@
     "camera data",
     "datasets other than bundled synthetic templates"
   ],
-  "file_count": 161,
+  "file_count": 162,
   "files": [
     {
       "path": ".env.example",
@@ -28,6 +28,21 @@
       "path": ".gitignore",
       "size": 155,
       "sha256": "f59f94f20e0b0a1773f4e7e1acd02b6fb0d216c47d103d6821bede34a3f37c80"
+    },
+    {
+      "path": "README.md",
+      "size": 44198,
+      "sha256": "c3d24c5e56cc0b9e03266e263ff3928fef08e413be200e3a6da4b0d3158dfed2"
+    },
+    {
+      "path": "README_部署版_含模型权重.md",
+      "size": 8935,
+      "sha256": "b8eaed4763612b0cb773a19f4a47e61fd110a2aa701ee10a14fcc877c13b2115"
+    },
+    {
+      "path": "RELEASE_MANIFEST.json",
+      "size": 27101,
+      "sha256": "14c881cfd71621f803eac3296e9e230cd1a2c9efc05ef583c92432ee2931874b"
     },
     {
       "path": "auth.py",
@@ -86,8 +101,8 @@
     },
     {
       "path": "data/source_catalog.json",
-      "size": 4489,
-      "sha256": "d14b37f8c1167362effa819a9d902080f5b32643971d784dd35494cd74a89cf7"
+      "size": 7228,
+      "sha256": "0bc03c5f6b536428465bb888cce7c28bcd3796363dad8b4687269cec162230df"
     },
     {
       "path": "data/zju_pilot.json",
@@ -131,8 +146,8 @@
     },
     {
       "path": "docs/08_实时数据接入说明.md",
-      "size": 7620,
-      "sha256": "9b21d2e6f10aaa54f0f104df50f978ab85646ac925bce68fd7cf56cc371103e6"
+      "size": 8094,
+      "sha256": "3d3e31838a9b7a9f7b2304066fef22cf814871478cab9f030085d7f4fbc3dc1e"
     },
     {
       "path": "docs/09_行动闭环与Agent优化.md",
@@ -215,6 +230,11 @@
       "sha256": "c64c1a850d7a235c6b6b45a49dfb8a7b666a2e094d72f16fe99c88ff541ca602"
     },
     {
+      "path": "docs/25_官方气象与水利数据源.md",
+      "size": 3473,
+      "sha256": "9f35e1ae9bf747afe0eecf7abfb03795ba45481a6a41af3ae42bd6e116d3de32"
+    },
+    {
       "path": "doctor.py",
       "size": 6018,
       "sha256": "d0a8fec5a75753802b0faaf8bbbc3a81f3e864bf05b7f1a1036b43e299cdf5fa"
@@ -266,8 +286,8 @@
     },
     {
       "path": "live_data.py",
-      "size": 16485,
-      "sha256": "bd61afebd50773fd2b4cae1c1d0a6ee15f436b76f26fd9cf95e09ccc903dd652"
+      "size": 17496,
+      "sha256": "7673c94d2044ed64a81b377cb6dc49d767dc699cbe404e65cb6035b30ea49814"
     },
     {
       "path": "monitoring.py",
@@ -278,21 +298,6 @@
       "path": "network_policy.py",
       "size": 7385,
       "sha256": "9eaf3725fc5654166da472c639b52ea3cd258761165d280fa9c67bce3467b884"
-    },
-    {
-      "path": "README_部署版_含模型权重.md",
-      "size": 8219,
-      "sha256": "ad4de2c9d48b92906c8cd41197f5054ebf96013cc8d39460a4d4f17c8519102b"
-    },
-    {
-      "path": "README.md",
-      "size": 43383,
-      "sha256": "f7337f669a783e1e4cc40558ef21f3cf71c3f7b9b5fdecc93ef840b11cd70486"
-    },
-    {
-      "path": "RELEASE_MANIFEST.json",
-      "size": 26924,
-      "sha256": "8eb1cc006f9ca5715ed47f37f44448a30ce97b05b301590f577c372cf44d38ab"
     },
     {
       "path": "requirements.txt",
@@ -406,8 +411,8 @@
     },
     {
       "path": "tests/test_live_data.py",
-      "size": 7601,
-      "sha256": "11073e38174cd8d19b0a6653780403ceebeaf90275e57b8e7620eadf1ce1761d"
+      "size": 8123,
+      "sha256": "f016c99e309d9cf7b43f005eac32faa7a0a7da3930b5dc96ad990c4f052d8980"
     },
     {
       "path": "tests/test_monitor_http.py",
@@ -488,6 +493,11 @@
       "path": "third_party/V-FloodNet-SOURCE.txt",
       "size": 672,
       "sha256": "882944ea02a3701a3e2f0dd82bac6beb77729b4fc6d61bf1fd10b1aa886923c4"
+    },
+    {
+      "path": "third_party/V-FloodNet/README.md",
+      "size": 10542,
+      "sha256": "77311b17fd351f841e261faa2e4fa2af1a89827c82f7214fd129fe0431a079e8"
     },
     {
       "path": "third_party/V-FloodNet/assets/img_exp/copyrights.txt",
@@ -640,11 +650,6 @@
       "sha256": "27f56df39c54a7fa7f0fd7fa12f582a50669a679e45757dfb0878215da62984c"
     },
     {
-      "path": "third_party/V-FloodNet/README.md",
-      "size": 10542,
-      "sha256": "77311b17fd351f841e261faa2e4fa2af1a89827c82f7214fd129fe0431a079e8"
-    },
-    {
       "path": "third_party/V-FloodNet/records/link_efficientb4_model.pth",
       "size": 72294975,
       "sha256": "ab073b386a30375e0947246dbfcbab5b23197056d8918841f6b7e2764add7440"
@@ -735,6 +740,11 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "third_party/V-FloodNet/video_module/dataset/Water_DS.py",
+      "size": 3862,
+      "sha256": "8738075d0c93508c761487be0e24efdce1274185310cef99b0d93825a4273d50"
+    },
+    {
       "path": "third_party/V-FloodNet/video_module/dataset/__init__.py",
       "size": 25,
       "sha256": "8652bddba904c4f89f6634bffdba9c88a5012075bdcf70e45c8dfc1fe94a57c7"
@@ -745,16 +755,6 @@
       "sha256": "2e90e0a8b9e8e973236eddbf2bf1df512462a2afc1cab2e49237842b21d427fe"
     },
     {
-      "path": "third_party/V-FloodNet/video_module/dataset/Water_DS.py",
-      "size": 3862,
-      "sha256": "8738075d0c93508c761487be0e24efdce1274185310cef99b0d93825a4273d50"
-    },
-    {
-      "path": "third_party/V-FloodNet/video_module/model/__init__.py",
-      "size": 62,
-      "sha256": "7994f2974e4bb5abf7984132f620efd9189e79259a468ebe98b3ba791ad22d6b"
-    },
-    {
       "path": "third_party/V-FloodNet/video_module/model/AFB_URR.py",
       "size": 12306,
       "sha256": "8e59fd661058503ea97bf4a3ba8c37da2a1984a855fd11abf724d69b2802ee12"
@@ -763,6 +763,11 @@
       "path": "third_party/V-FloodNet/video_module/model/FeatureBank.py",
       "size": 6723,
       "sha256": "dbf8c48479e4d1c21af64516e274c210cb0593af0ab3df7b7312aa7e30ea88c7"
+    },
+    {
+      "path": "third_party/V-FloodNet/video_module/model/__init__.py",
+      "size": 62,
+      "sha256": "7994f2974e4bb5abf7984132f620efd9189e79259a468ebe98b3ba791ad22d6b"
     },
     {
       "path": "vision_acceptance.py",
@@ -781,8 +786,8 @@
     },
     {
       "path": "web/index.html",
-      "size": 45044,
-      "sha256": "4d076c11c69402c28608559c832015a0a64aa8a770bd4ff1e676669104d21ef4"
+      "size": 45385,
+      "sha256": "1ea91e31fbea2f9910d298ee13a25c03edadc9348936ad3f4491205e705f080b"
     },
     {
       "path": "web/monitor.js",

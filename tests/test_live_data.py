@@ -116,6 +116,14 @@ class ServiceTests(unittest.TestCase):
         self.assertNotIn('temperature_c',s['providers']['station'])
         self.assertEqual(s['official_alerts']['status'],'not_connected')
 
+    def test_official_source_registry_is_explicitly_not_connected(self):
+        sources=self.service.snapshot()['official_sources']
+        self.assertEqual([s['id'] for s in sources], [
+            'CMA-TYPHOON-PRODUCTS','NMC-TYPHOON','ZJ-CMA-PORTAL','ZJ-WATER-PORTAL'])
+        self.assertEqual({s['status'] for s in sources},
+                         {'authorization_required','manual_verification_only','endpoint_required'})
+        self.assertTrue(all(s['url'].startswith(('http://','https://')) for s in sources))
+
     def test_old_success_is_stale(self):
         self.now+=8000;s=self.service.snapshot()
         self.assertEqual(s['providers']['station']['status'],'stale')

@@ -1,12 +1,13 @@
 {
-  "checked_on": "2026-10-01",
+  "checked_on": "2026-10-13",
   "sources": [
     {
       "id": "CMA-HOME",
       "title": "国家气象信息中心—中国气象数据网",
-      "url": "http://data.cma.cn/site/index.html",
-      "verification": "直接HTTP访问成功，HTTP 200；HTTPS及搜索读取不稳定",
-      "purpose": "数据目录入口",
+      "url": "https://data.cma.cn/",
+      "verification": "2026-10-13从部署环境访问HTTPS入口返回HTTP 200",
+      "purpose": "国家级气象资料目录、历史数据和产品申请入口",
+      "connection_status": "catalog_only",
       "raw_observations_downloaded": false
     },
     {
@@ -37,6 +38,46 @@
       "url": "http://data.cma.cn/cmaOld/article/getLeft/id/249/keyIndex/1.html",
       "verification": "公开页面提供普通、个人实名、单位实名和教育科研实名入口",
       "purpose": "用户自行确认账户类别与获取资格"
+    },
+    {
+      "id": "CMA-TYPHOON-PRODUCTS",
+      "title": "中国气象数据网·台风及相关气象产品",
+      "url": "https://data.cma.cn/",
+      "verification": "官方数据门户入口已核验；具体台风数据集、字段、时效和许可需登录后按产品目录确认",
+      "access": "需要按具体产品完成注册、申请或授权；项目未保存账号、令牌或下载数据",
+      "purpose": "历史台风、站点降雨和气象背景资料，用于事件回放、阈值校准和离线评估",
+      "connection_status": "authorization_required",
+      "automation": "未接入账户接口，不参与当前自动监测"
+    },
+    {
+      "id": "NMC-TYPHOON",
+      "title": "中央气象台台风网",
+      "url": "http://typhoon.nmc.cn/",
+      "verification": "2026-10-13从部署环境访问入口返回HTTP 200",
+      "purpose": "人工核对当前台风位置、路径和预报展示，作为台风影响研判的官方网页入口",
+      "connection_status": "manual_verification_only",
+      "automation": "未取得稳定、授权的机器接口；不得抓取网页前端冒充API",
+      "caution": "网页展示不能直接转换为校园积水事实或自动处置命令"
+    },
+    {
+      "id": "ZJ-CMA-PORTAL",
+      "title": "浙江省气象局",
+      "url": "http://zj.cma.gov.cn/",
+      "verification": "2026-10-13部署环境访问返回HTTP 502，HTTPS发生TLS握手失败；保留官方入口供人工复核",
+      "purpose": "浙江省级气象预警、天气服务及属地信息的候选官方来源",
+      "connection_status": "endpoint_required",
+      "automation": "尚无授权接口、字段文档、调用频率和许可说明，不参与当前自动监测",
+      "required_before_connection": ["正式接口地址", "授权方式", "预警编号", "发布时间与解除时间", "适用区域", "灾种与等级", "数据许可"]
+    },
+    {
+      "id": "ZJ-WATER-PORTAL",
+      "title": "浙江省水利厅",
+      "url": "https://slt.zj.gov.cn/",
+      "verification": "2026-10-13部署环境HTTPS发生TLS握手失败，HTTP入口返回502；保留官方入口供人工复核",
+      "purpose": "浙江省雨量、水位、河道、水库及防汛水利信息的候选官方来源",
+      "connection_status": "endpoint_required",
+      "automation": "尚无授权水雨情接口、站点清单、字段口径和许可说明，不参与当前自动监测",
+      "required_before_connection": ["正式接口地址", "站点编码与坐标", "观测时间", "雨量累计时段", "水位基准", "缺测标识", "更新频率", "数据许可"]
     },
     {
       "id": "FZ-RAIN-20230905",
@@ -82,5 +123,5 @@
       "caution": "本接入无累计降水字段；缺失不当作0；MPS/KT从原始报文换算"
     }
   ],
-  "live_sources_checked_on": "2026-10-02"
+  "live_sources_checked_on": "2026-10-13"
 }

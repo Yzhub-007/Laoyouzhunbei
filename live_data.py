@@ -26,6 +26,17 @@ MODEL_URL = 'https://api.open-meteo.com/v1/forecast?' + urlencode({
     'hourly': 'precipitation,wind_speed_10m', 'forecast_days': 2,
     'wind_speed_unit': 'ms', 'precipitation_unit': 'mm', 'timezone': 'Asia/Shanghai', 'timeformat': 'unixtime'})
 METAR_URL = 'https://aviationweather.gov/api/data/metar?ids=ZSFZ&format=json'
+OFFICIAL_SOURCE_REGISTRY = [
+    {'id':'CMA-TYPHOON-PRODUCTS','name':'中国气象数据网·台风及相关气象产品',
+     'url':'https://data.cma.cn/','status':'authorization_required',
+     'use':'历史台风、站点降雨和气象产品申请；未调用账户内接口。'},
+    {'id':'NMC-TYPHOON','name':'中央气象台台风网','url':'http://typhoon.nmc.cn/',
+     'status':'manual_verification_only','use':'人工核对台风位置、路径和预报展示；未取得机器接口。'},
+    {'id':'ZJ-CMA-PORTAL','name':'浙江省气象局','url':'http://zj.cma.gov.cn/',
+     'status':'endpoint_required','use':'浙江属地预警和气象服务候选来源；待正式接口及授权。'},
+    {'id':'ZJ-WATER-PORTAL','name':'浙江省水利厅','url':'https://slt.zj.gov.cn/',
+     'status':'endpoint_required','use':'浙江雨量、水位、河道和水库候选来源；待水雨情接口及授权。'},
+]
 
 def iso(epoch):
     return datetime.fromtimestamp(epoch, BEIJING).isoformat(timespec='seconds')
@@ -216,8 +227,9 @@ class LiveService:
             now = self.clock()
             result = {'location':self.location, 'served_epoch':now, 'served_at':iso(now),
                       'poll_seconds':POLL_SECONDS, 'providers':{},
+                      'official_sources':copy.deepcopy(OFFICIAL_SOURCE_REGISTRY),
                       'official_alerts':{'status':'not_connected','message':'官方预警尚未接入；不代表当前无预警。',
-                                         'source_url':'https://www.nmc.cn/'},
+                                         'source_url':'http://zj.cma.gov.cn/'},
                       'cma_access':{'status':'authorization_required','message':'中国气象数据网实时接口待授权，未调用账户内接口。'}}
             for name in ('model','station'):
                 entry = self.cache.get(name,{})
