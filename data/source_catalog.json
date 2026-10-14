@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-10-13",
+  "checked_on": "2026-10-14",
   "sources": [
     {
       "id": "CMA-HOME",
@@ -70,6 +70,28 @@
       "required_before_connection": ["正式接口地址", "授权方式", "预警编号", "发布时间与解除时间", "适用区域", "灾种与等级", "数据许可"]
     },
     {
+      "id": "ZJ-CMA-ALERT-ARCHIVE",
+      "title": "浙江省气象灾害预警信号信息",
+      "resource_code": "S330000TAB0220180412002514",
+      "url": "https://data.zjzwfw.gov.cn/",
+      "verification": "2026-10-14已用平台接口测试取得一条双层JSON样例记录，字段包含发布单位、预警编号、地区、等级、事件代码、内容、经纬度、发布时间、发送时间和有效时间",
+      "update_frequency": "monthly",
+      "time_range": "2015年至今（以平台资源说明为准）",
+      "access": "无条件开放；仍需实名认证账号的userSecret，每次数据请求前调用验签接口；appSecret可不填",
+      "interfaces": {
+        "sign_url": "https://data.zjzwfw.gov.cn/jimp/sign/createsign.do",
+        "gateway_url": "https://data.zjzwfw.gov.cn/interface/gateway.do",
+        "count": "zj194262count",
+        "page": "zj194262page",
+        "date": "zj194262date"
+      },
+      "fields": ["unit_name", "yj_ptime", "unit_long", "yj_id", "yj_addr", "yj_grade", "unit_lat", "yj_validtime", "yj_content", "yj_eventype", "yj_ch", "yj_sendtime"],
+      "purpose": "官方预警历史归档、事件回放和规则评估",
+      "connection_status": "connector_ready_credentials_required",
+      "automation": "连接器位于integrations/zj_open_data/alerts.py；不会进入当前实时预警判断",
+      "caution": "资源按月更新，不能用于断言当前是否存在预警，也不能自动触发封路、疏散或信息发布"
+    },
+    {
       "id": "ZJ-WATER-PORTAL",
       "title": "浙江省水利厅",
       "url": "https://slt.zj.gov.cn/",
@@ -123,5 +145,5 @@
       "caution": "本接入无累计降水字段；缺失不当作0；MPS/KT从原始报文换算"
     }
   ],
-  "live_sources_checked_on": "2026-10-13"
+  "live_sources_checked_on": "2026-10-14"
 }

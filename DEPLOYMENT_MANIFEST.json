@@ -1,7 +1,7 @@
 {
-  "bundle": "涝有准备_项目_v0.9_V-FloodNet_官方数据源_2026-10-13",
-  "generated_on": "2026-10-13",
-  "source_release_sha256": "f505fdc47c27acff8a8b9c104565fa139d25b3118aca59ea66b8aa84f82f9181",
+  "bundle": "涝有准备_项目_v0.9_V-FloodNet_浙江预警历史接口_2026-10-14",
+  "generated_on": "2026-10-14",
+  "source_release_sha256": "09b611ed7c3a5eb6e09b5a1ab4f1601e63f4d3a8f1835b551214e4826c3dfd4c",
   "model": {
     "path": "third_party/V-FloodNet/records/link_efficientb4_model.pth",
     "size": 72294975,
@@ -17,12 +17,12 @@
     "camera data",
     "datasets other than bundled synthetic templates"
   ],
-  "file_count": 162,
+  "file_count": 165,
   "files": [
     {
       "path": ".env.example",
-      "size": 806,
-      "sha256": "001c937058a984eab7c2e8b3f6242e470b89d0b6583f5a4fec75b64351ecf75c"
+      "size": 845,
+      "sha256": "582842fb0b5dfcb5c9e46108775ba9322b15e4a24a0cca248a1ecc1d9d275c85"
     },
     {
       "path": ".gitignore",
@@ -31,18 +31,18 @@
     },
     {
       "path": "README.md",
-      "size": 44198,
-      "sha256": "c3d24c5e56cc0b9e03266e263ff3928fef08e413be200e3a6da4b0d3158dfed2"
+      "size": 44944,
+      "sha256": "e9aeead75d3129c8a419507ebae83f3a4d65085ae82e77b72beb6e75007fff0d"
     },
     {
       "path": "README_部署版_含模型权重.md",
-      "size": 8935,
-      "sha256": "b8eaed4763612b0cb773a19f4a47e61fd110a2aa701ee10a14fcc877c13b2115"
+      "size": 9322,
+      "sha256": "8ac1cd2ec3a688393981602741fc43e455b9aa5782d61e3cc984b28b95ef27b0"
     },
     {
       "path": "RELEASE_MANIFEST.json",
-      "size": 27101,
-      "sha256": "14c881cfd71621f803eac3296e9e230cd1a2c9efc05ef583c92432ee2931874b"
+      "size": 27599,
+      "sha256": "4b095a2bfde384fa6d85cb95f69e4028e1c461a046b86fad3be9bb187e45c753"
     },
     {
       "path": "auth.py",
@@ -101,8 +101,8 @@
     },
     {
       "path": "data/source_catalog.json",
-      "size": 7228,
-      "sha256": "0bc03c5f6b536428465bb888cce7c28bcd3796363dad8b4687269cec162230df"
+      "size": 8771,
+      "sha256": "6271675c62fe4993ab5907200f144cad7386f415833d8541c8cb84300ed82de1"
     },
     {
       "path": "data/zju_pilot.json",
@@ -146,8 +146,8 @@
     },
     {
       "path": "docs/08_实时数据接入说明.md",
-      "size": 8094,
-      "sha256": "3d3e31838a9b7a9f7b2304066fef22cf814871478cab9f030085d7f4fbc3dc1e"
+      "size": 8382,
+      "sha256": "e457bf7cdffd2f8f03b2ccb34b61b03adb6523b49884201f665d661d8711b5ad"
     },
     {
       "path": "docs/09_行动闭环与Agent优化.md",
@@ -231,8 +231,8 @@
     },
     {
       "path": "docs/25_官方气象与水利数据源.md",
-      "size": 3473,
-      "sha256": "9f35e1ae9bf747afe0eecf7abfb03795ba45481a6a41af3ae42bd6e116d3de32"
+      "size": 5030,
+      "sha256": "1d1c9a9119bf8da81542b3f26b26f590425b3b086c0a42df469c9257135eac40"
     },
     {
       "path": "doctor.py",
@@ -285,9 +285,19 @@
       "sha256": "2eb66e8a49e415fc8e55e8abb96ee1e6d71e9b90f863c866f6cceb262e0b230e"
     },
     {
+      "path": "integrations/zj_open_data/__init__.py",
+      "size": 38,
+      "sha256": "1806aedf7863ac6db6df737bdd278790810230be6d7ea824f68b645fd6242c0d"
+    },
+    {
+      "path": "integrations/zj_open_data/alerts.py",
+      "size": 9339,
+      "sha256": "447c7584dd4d175da8e8ba0e58632aecee4115fb7852fe5e218274d428896302"
+    },
+    {
       "path": "live_data.py",
-      "size": 17496,
-      "sha256": "7673c94d2044ed64a81b377cb6dc49d767dc699cbe404e65cb6035b30ea49814"
+      "size": 17753,
+      "sha256": "6a44b4ac2d25e017cb2d7a71113bb49cdcac342b49e1b5028667addc0c7681d9"
     },
     {
       "path": "monitoring.py",
@@ -316,13 +326,13 @@
     },
     {
       "path": "security_cli.py",
-      "size": 1745,
-      "sha256": "6221fa1be19bf61d6e915c96a882a78300b40824c1e018257fbaf32c97f1d017"
+      "size": 1752,
+      "sha256": "b8511da6ed17302a742db28b2030d2b1ee29ff9f8dbf05c2d372c7946ab2390c"
     },
     {
       "path": "server.py",
-      "size": 32972,
-      "sha256": "32392d1a08b8414033ce0275eadf4f89c93645f4fd66ca1f1d02881b4074ef7a"
+      "size": 32994,
+      "sha256": "db13baeb5218bd3935ccaf447f648d9a98a8dbabd96fd92aad4de6fd8d8535f0"
     },
     {
       "path": "setup.ps1",
@@ -411,8 +421,8 @@
     },
     {
       "path": "tests/test_live_data.py",
-      "size": 8123,
-      "sha256": "f016c99e309d9cf7b43f005eac32faa7a0a7da3930b5dc96ad990c4f052d8980"
+      "size": 8209,
+      "sha256": "8a1f5886cfb42fe245458b5f800fb17ab841057726f65f0286b29c6422c88f5b"
     },
     {
       "path": "tests/test_monitor_http.py",
@@ -483,6 +493,11 @@
       "path": "tests/test_workflow.py",
       "size": 6744,
       "sha256": "e64bab4485f9ac34993960002843592d82c31a9a534cc902a70c5f2646235351"
+    },
+    {
+      "path": "tests/test_zj_open_data.py",
+      "size": 2978,
+      "sha256": "514994ddac44a197be2978e18df80140b6bd2fd4986276eb5f173214165635dd"
     },
     {
       "path": "tests/test_zju.py",

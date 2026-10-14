@@ -216,3 +216,5 @@ V-FloodNet 上游源码快照对应提交 `60c30fbac9d264d020148780504871556285f
 - 浙江省水利厅：<https://slt.zj.gov.cn/>
 
 登记入口不等于已经取得实时API。当前中国气象数据网账户接口、浙江气象预警接口和浙江水雨情接口仍需授权、接口文档、字段口径及数据许可。网页只供人工复核，不得通过抓取网页前端冒充稳定数据接口。详细状态见 `data/source_catalog.json` 和 `docs/25_官方气象与水利数据源.md`。
+
+本版本已实现浙江省“气象灾害预警信号信息”月度历史归档连接器。它可用于事件回放，但不是实时预警源。使用前执行 `python .\security_cli.py set-secret ZJDATA_USER_SECRET`，然后运行 `python -m integrations.zj_open_data.alerts --page 1 --page-size 200`。凭据和下载结果均保存在当前Windows账户的DPAPI安全存储中。

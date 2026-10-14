@@ -24,7 +24,7 @@ def main():
         print('新的单次初始化码已写入：' + str(path.resolve()))
         print('有效20分钟，仅在本机查看并输入初始化页面；不要发送到聊天。')
         return
-    if not args.key or not re.fullmatch(r'(VISION|LLM|CAMERA|MONITOR|SECURITY)_[A-Z0-9_]+', args.key):
+    if not args.key or not re.fullmatch(r'(VISION|LLM|CAMERA|MONITOR|SECURITY|ZJDATA)_[A-Z0-9_]+', args.key):
         parser.error('需要合法的配置名称，如 VISION_ENDPOINT')
     path = args.runtime / 'secrets.dpapi'
     data = read_json(path, default={})

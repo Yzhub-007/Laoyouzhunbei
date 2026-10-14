@@ -119,9 +119,11 @@ class ServiceTests(unittest.TestCase):
     def test_official_source_registry_is_explicitly_not_connected(self):
         sources=self.service.snapshot()['official_sources']
         self.assertEqual([s['id'] for s in sources], [
-            'CMA-TYPHOON-PRODUCTS','NMC-TYPHOON','ZJ-CMA-PORTAL','ZJ-WATER-PORTAL'])
+            'CMA-TYPHOON-PRODUCTS','NMC-TYPHOON','ZJ-CMA-PORTAL',
+            'ZJ-CMA-ALERT-ARCHIVE','ZJ-WATER-PORTAL'])
         self.assertEqual({s['status'] for s in sources},
-                         {'authorization_required','manual_verification_only','endpoint_required'})
+                         {'authorization_required','manual_verification_only','endpoint_required',
+                          'credentials_required'})
         self.assertTrue(all(s['url'].startswith(('http://','https://')) for s in sources))
 
     def test_old_success_is_stale(self):

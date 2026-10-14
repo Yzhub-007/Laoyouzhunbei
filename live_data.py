@@ -34,6 +34,9 @@ OFFICIAL_SOURCE_REGISTRY = [
      'status':'manual_verification_only','use':'人工核对台风位置、路径和预报展示；未取得机器接口。'},
     {'id':'ZJ-CMA-PORTAL','name':'浙江省气象局','url':'http://zj.cma.gov.cn/',
      'status':'endpoint_required','use':'浙江属地预警和气象服务候选来源；待正式接口及授权。'},
+    {'id':'ZJ-CMA-ALERT-ARCHIVE','name':'浙江省气象灾害预警信号信息',
+     'url':'https://data.zjzwfw.gov.cn/','status':'credentials_required',
+     'use':'官方月度历史归档连接器已实现；不能判断当前是否存在预警。'},
     {'id':'ZJ-WATER-PORTAL','name':'浙江省水利厅','url':'https://slt.zj.gov.cn/',
      'status':'endpoint_required','use':'浙江雨量、水位、河道和水库候选来源；待水雨情接口及授权。'},
 ]

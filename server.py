@@ -103,14 +103,14 @@ def read_config(runtime=None):
         for line in path.read_text(encoding='utf-8-sig').splitlines():
             if line.strip() and not line.lstrip().startswith('#') and '=' in line:
                 key, value = line.split('=', 1)
-                if key.strip().startswith(('LLM_', 'VISION_', 'CAMERA_', 'MONITOR_', 'SECURITY_')):
+                if key.strip().startswith(('LLM_', 'VISION_', 'CAMERA_', 'MONITOR_', 'SECURITY_', 'ZJDATA_')):
                     imported[key.strip()] = value.strip().strip('"').strip("'")
         if imported:
             values.update(imported)
             write_json(secret_path, values)
             path.write_text('# Configuration migrated to runtime/secrets.dpapi. Use security_cli.py set-secret KEY.\n', encoding='utf-8')
     for key, value in os.environ.items():
-        if key.startswith(('LLM_', 'VISION_', 'CAMERA_', 'MONITOR_', 'SECURITY_')) and value:
+        if key.startswith(('LLM_', 'VISION_', 'CAMERA_', 'MONITOR_', 'SECURITY_', 'ZJDATA_')) and value:
             values[key] = value
     return values
 
